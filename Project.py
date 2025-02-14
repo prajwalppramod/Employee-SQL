@@ -45,7 +45,7 @@ while True:
         id = int(input("Enter employee id: "))
         cursor.execute(f"DELETE FROM Employees WHERE id={id}")
         print("Employee deleted")
-        conn.commit
+        conn.commit()
     elif choice == 5:
         break
     else:
